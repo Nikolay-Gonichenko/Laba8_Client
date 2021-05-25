@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddWindowController">
+   <children>
+      <Label fx:id="enterLabel" text="Enter vehicles's fields">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="270.0" prefWidth="200.0" spacing="40.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Label text="Name" />
+                  <TextField fx:id="nameTextField" />
+                  <Label text="X coordinate" />
+                  <TextField fx:id="x_coordinateTextField" />
+                  <Label text="Y coordinate" />
+                  <TextField fx:id="y_coordinateTextField" />
+                  <Label text="Engine power" />
+                  <TextField fx:id="engine_powerTextField" />
+               </children>
+            </VBox>
+            <VBox prefHeight="313.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Label text="Capacity" />
+                  <TextField fx:id="capacityTextField" />
+                  <Label text="Vehicle type" />
+                  <ChoiceBox fx:id="VehicleTypeChoiceBox" prefWidth="150.0" />
+                  <Label text="Fuel type" />
+                  <ChoiceBox fx:id="FuelTypeChoiceBox" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="done" mnemonicParsing="false" onAction="#getVehicle" text="Add" />
+   </children>
+</VBox>

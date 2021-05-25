@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateWindowController">
+   <children>
+      <Label fx:id="enterIdLabel" text="Enter an id and other vehicle's fileds">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="296.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="270.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Label text="Id" />
+                  <TextField fx:id="idTextField" />
+                  <Label text="Name" />
+                  <TextField fx:id="nameTextField" />
+                  <Label text="X coordinate" />
+                  <TextField fx:id="xCoordinateTextField" />
+                  <Label text="Y coordinate" />
+                  <TextField fx:id="yCoordinateTextField" />
+               </children>
+            </VBox>
+            <VBox prefHeight="270.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Label text="Engine power" />
+                  <TextField fx:id="enginePowerTextField" />
+                  <Label text="Capacity" />
+                  <TextField fx:id="capacityTextField" />
+                  <Label text="Vehicle type" />
+                  <ChoiceBox fx:id="VehicleTypeChoiceBox" prefWidth="150.0" />
+                  <Label text="Fuel type" />
+                  <ChoiceBox fx:id="FuelTypeChoiceBox" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="updateButton" mnemonicParsing="false" onAction="#update" text="Update" />
+   </children>
+</VBox>

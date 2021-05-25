@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="200.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StartWindowController">
+   <center>
+      <VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="100.0" prefHeight="365.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nickLabel" prefHeight="21.0" prefWidth="73.0" text="nickname">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="nicknameTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label fx:id="passwordLabel" text="Password" />
+            <PasswordField fx:id="passwordTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" />
+            <Label fx:id="languagesLabel" text="Language" />
+            <ChoiceBox fx:id="ChangeLanguageChoiceBox" prefHeight="30.0" prefWidth="200.0" />
+            <Button fx:id="entrance" mnemonicParsing="false" onAction="#entrance" text="Entrance" textAlignment="JUSTIFY">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <Label fx:id="headerLabel" prefHeight="35.0" prefWidth="126.0" text="Login/Registration" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

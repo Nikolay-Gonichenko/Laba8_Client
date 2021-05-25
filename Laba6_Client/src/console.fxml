@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="50.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConsoleWindowController">
+   <children>
+      <Label fx:id="header" alignment="CENTER" prefHeight="27" prefWidth="200" text="Commands">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#help" prefHeight="31.0" prefWidth="100.0" text="Help" />
+            <Button fx:id="showButton" mnemonicParsing="false" onAction="#show" prefWidth="100.0" text="Show" />
+            <Button fx:id="infoButton" mnemonicParsing="false" onAction="#info" prefWidth="100.0" text="Info" />
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#add" prefWidth="100.0" text="Add" />
+            <Button fx:id="updateButton" mnemonicParsing="false" onAction="#update" prefWidth="100.0" text="Update" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clear" prefWidth="100.0" text="Clear" />
+            <Button fx:id="removeIdButton" mnemonicParsing="false" onAction="#removeId" prefHeight="31.0" prefWidth="100.0" text="Remove_by_id" />
+            <Button fx:id="groupCountButton" mnemonicParsing="false" onAction="#groupCount" prefWidth="100.0" text="Group_Count" />
+            <Button fx:id="maxNameButton" mnemonicParsing="false" onAction="#maxName" prefWidth="100.0" text="Max_name" />
+            <Button fx:id="removeFirstCommand" mnemonicParsing="false" onAction="#removeFirst" prefWidth="100.0" text="Remove_first" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="removeHeadButton" mnemonicParsing="false" onAction="#removeHead" prefWidth="140.0" text="Remove_head" />
+            <Button fx:id="removeFuelTypeButton" mnemonicParsing="false" onAction="#removeFuelType" text="Remove_fuel_type" />
+            <Button fx:id="addMaxButton" mnemonicParsing="false" onAction="#addMax" prefWidth="140.0" text="Add_if_max" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="163.0" prefWidth="600.0" spacing="50.0">
+         <children>
+            <Button fx:id="goToTableButton" mnemonicParsing="false" onAction="#goToTable" text="Go to table" />
+            <Button fx:id="goToVisualizationButton" mnemonicParsing="false" onAction="#goToVisualization" text="Go to visualization" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

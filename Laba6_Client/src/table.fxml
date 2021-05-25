@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TableWindowController">
+   <children>
+      <Label fx:id="tableLabel" alignment="CENTER" prefHeight="27.0" prefWidth="80.0" text="Table">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox maxWidth="-Infinity" prefHeight="251.0" prefWidth="785.0">
+         <children>
+            <TableView fx:id="table" prefHeight="251.0" prefWidth="785.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="60.0" text="Id" />
+                <TableColumn fx:id="nameColumn" prefWidth="92.0" text="Name" />
+                  <TableColumn prefWidth="60.0" text="X" fx:id="xColumn" />
+                  <TableColumn fx:id="yColumn" prefWidth="60.0" text="Y" />
+                  <TableColumn fx:id="dateColumn" prefWidth="107.0" text="Creation Date" />
+                  <TableColumn fx:id="enginePowerColumn" prefWidth="121.0" text="Engine power" />
+                  <TableColumn fx:id="capacityColumn" prefWidth="75.0" text="Capacity" />
+                  <TableColumn fx:id="vehicleTypeColumn" prefWidth="115.0" text="Vehicle Type" />
+                  <TableColumn fx:id="fuelTypeColumn" prefWidth="95.0" text="Fuel Type" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+           <children>
+               <ChoiceBox fx:id="fieldsChoiceBox"  prefHeight="30.0" prefWidth="200.0" />
+               <TextField fx:id="valuesTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                   <font>
+                       <Font size="17.0" />
+                   </font>
+               </TextField>
+               <Button fx:id="filterButton" mnemonicParsing="false" onAction="#filter" text="Filter" />
+               <Button fx:id="sortButton" mnemonicParsing="false" onAction="#sort" text="Sort" />
+           </children>
+       </HBox>
+       <Button fx:id="updateButton" mnemonicParsing="false" onAction="#update" text="Update" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button fx:id="goToVisualizationButton" mnemonicParsing="false" onAction="#goToVisualization" text="Go to visualization" />
+            <Button fx:id="goToConsoleButton" mnemonicParsing="false" onAction="#goToConsole" text="Go to console" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
