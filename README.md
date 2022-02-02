@@ -1,7 +1,9 @@
 ## Desktop client-server application
 ___
 Here is the Frontend part of my desktop application
+
 [Link to the Backend](https://github.com/Nikolay-Gonichenko/Laba8_Server)
+
 Fronted is implemented with __JavaFX__
 
 The application allows to interact with collection of objects. On first page users have to sign in.
